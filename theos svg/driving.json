@@ -1,0 +1,59 @@
+{
+  "meta": {
+    "title": "driving",
+    "author": "Theo van den Heuvel"
+    },
+  "defs" {
+    "def":
+      "wheel" :  {"content": "<g
+           transform=\"translate(1.45389,-41.91474)\">
+          <circle
+             r=\"33.261902\"
+             cy=\"289.44049\"
+             cx=\"127.75597\"
+             style=\"fill:#685370;fill-opacity:1;stroke-width:0.16403222\" />
+          <circle
+             r=\"20.410715\"
+             cy=\"290.19644\"
+             cx=\"127.75595\"
+             style=\"fill:#d3ec6f;fill-opacity:1;stroke-width:0.26458332\" />
+          <path
+             d=\"m 127.75596,259.2024 0.75595,56.69644 2.26786,-2.26788 -1.51191,0.75597\"
+             style=\"fill:#060801;fill-opacity:1;stroke:#000000;stroke-width:6.96500015;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1\" />
+          <path
+             id=\"path4657-3\"
+             d=\"m 100.94677,291.48559 53.87397,-0.28021 -10.72861,-2.36269 6.39651,1.56846\"
+             style=\"fill:#060801;fill-opacity:1;stroke:#000000;stroke-width:6.96500015;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1\" />
+        </g>",
+      "rot" : ["linear", 1]
+    }
+  },
+  "project": {
+    "name": "driving bg",
+    "bgFile": "driving.svg",
+    "pins": [
+      { "name": "frontwheel", "pos": [97, 12]},
+      { "name": "rearwheel", "pos": [285, 12]},
+      { "name": "car_body", "pos": [253,100]}
+    ],
+    "components": [
+      {
+        "use": "wheel"
+      },
+      {
+        "use": "wheel"
+      },
+      {
+        "name" : "car_body",
+        "svg" : "<path
+       style=\"fill:#d3ec6f;fill-opacity:1;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1\"
+       d=\"m 49.136905,247.86311 55.938355,0.34459 c 0.77761,-33.61492 46.31732,-29.43587 46.86727,0.28871 l 144.38142,0.88941 c -0.79496,-30.05292 42.22901,-28.28901 40.8292,0.25151 l 80.13257,0.49363 -12.09524,-58.20833 -63.5,-6.80357 -12.85121,-50.64881 H 178.40476 l -11.33929,48.38095 -89.958328,10.58334 z\"
+/>",
+        "translate": {"form":"wave",
+          "vector": [0, 10],
+          "cycledur": ".25"
+        }
+      }
+    ]
+  }
+}
