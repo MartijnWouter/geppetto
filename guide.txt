@@ -1,0 +1,1 @@
+svg file needs to be in the same folder as the .js file that writes to it
