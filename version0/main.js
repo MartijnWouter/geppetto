@@ -5,8 +5,10 @@ const app = electron.app;
 const BrowserWindow = electron.BrowserWindow;
 const path = require("path");
 const url = require("url");
-let svgFileName = "svgFiles/" + "driving.svg";
+let svgFileName = "svgFiles";
 var fs = require('fs');
+//var $ = require("jquery")(window);
+var svgDoc = "";
 //var javascript = require('javascript.js');
 
 let win;
@@ -16,8 +18,11 @@ function start(){
 }
 function chosen(){
        console.log("chosen");
-       let doc = document.getElementById("avatar");
-       console.log("doc: " + doc);
+        svgDoc = $('input[type=file]').val();
+       console.log("doc: " + svgDoc);
+       svgDoc = "" + svgDoc;
+       var fileName = (svgDoc.split("\\"))[2];
+       console.log("file name: " + fileName);
 }
 function readSvg(){
     fs.readFile(svgFileName, 'utf-8', function(err, data){
