@@ -7,7 +7,6 @@ const path = require("path");
 const url = require("url");
 let svgFileName = "svgFiles";
 var fs = require('fs');
-//var $ = require("jquery")(window);
 var svgDoc = "";
 //var javascript = require('javascript.js');
 
@@ -15,6 +14,7 @@ let win;
 function start(){
     
     readSvg();
+
 }
 function chosen(){
        console.log("chosen");
