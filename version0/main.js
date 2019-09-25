@@ -5,7 +5,7 @@ const app = electron.app;
 const BrowserWindow = electron.BrowserWindow;
 const path = require("path");
 const url = require("url");
-let svgFileName = "svgFiles";
+var svgFileName = "svgFiles";
 var fs = require('fs');
 var svgDoc = "";
 //var javascript = require('javascript.js');
@@ -23,6 +23,7 @@ function chosen(){
        svgDoc = "" + svgDoc;
        var fileName = (svgDoc.split("\\"))[2];
        console.log("file name: " + fileName);
+       svgFileName = fileName;
 }
 function readSvg(){
     fs.readFile(svgFileName, 'utf-8', function(err, data){
