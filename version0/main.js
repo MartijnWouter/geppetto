@@ -30,9 +30,22 @@ function readSvg(){
         if (err) throw err;
         //console.log(" " + data);
         console.log("readSvg succesfull");
-
+        document.getElementById("mainBody").innerHTML += data;
       });
+      
 }
+fileInput.addEventListener('change', function(e) {
+    //setting up the filereader
+    var file = fileInput.files[0];
+    var reader = new FileReader();
+    reader.onload = function(e) {
+        //accessing the file's content
+        let content =  reader.result;
+        
+    }
+    //now the file content will be read as text
+    reader.readAsText(file);
+    });
 app.on('ready', createWindow);
 function createWindow(){
     win = new BrowserWindow();
