@@ -1,0 +1,12 @@
+{
+    "name": "hello-world",
+    "version": "1.0.0",
+    "main": "main.js",
+    "devDependencies": {},
+    "scripts": {"start": "electron ."},
+    "dependencies": {
+        "electron": "^7.0.0",
+        "jquery": "^3.4.1",
+        "node": "^12.12.0"
+    }
+}

@@ -1,0 +1,1 @@
+i "imported" the chart funtion/class using npm from https://www.chartjs.org/docs/latest/getting-started/installation.html
